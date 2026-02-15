@@ -1,7 +1,7 @@
 import path from 'node:path';
 
-const DEFAULT_RAW_BASE = 'https://raw.githubusercontent.com/gitwho/registry/main';
-const DEFAULT_WEB_BASE = 'https://github.com/gitwho/registry/tree/main';
+const DEFAULT_RAW_BASE = 'https://raw.githubusercontent.com/gitwho-ai/registry/main';
+const DEFAULT_WEB_BASE = 'https://github.com/gitwho-ai/registry/tree/main';
 
 export function getRegistryConfig() {
   return {

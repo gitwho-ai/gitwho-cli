@@ -17,16 +17,16 @@ Writes files to:
 Optional output root:
 
 ```bash
-npx gitwho pull gitwho:eng/debugger@0.1.0 --out ./tmp
+npx gitwho-ai pull gitwho:eng/debugger@0.1.0 --out ./tmp
 ```
 
 Resolve helper:
 
 ```bash
-npx gitwho resolve gitwho:eng/debugger@0.1.0
+npx gitwho-ai resolve gitwho:eng/debugger@0.1.0
 ```
 
 ## Environment overrides
 
-- `GITWHO_REGISTRY_RAW_BASE` (default: `https://raw.githubusercontent.com/gitwho/registry/main`)
-- `GITWHO_REGISTRY_WEB_BASE` (default: `https://github.com/gitwho/registry/tree/main`)
+- `GITWHO_REGISTRY_RAW_BASE` (default: `https://raw.githubusercontent.com/gitwho-ai/registry/main`)
+- `GITWHO_REGISTRY_WEB_BASE` (default: `https://github.com/gitwho-ai/registry/tree/main`)
