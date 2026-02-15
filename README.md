@@ -1,29 +1,43 @@
 # gitwho CLI
 
-`gitwho` pulls personalities from the GitWho registry and outputs a compiled injection prompt.
+`gitwho-ai` pulls personalities from the GitWho registry and outputs a compiled prompt block.
+
+## Install
+
+```bash
+npm i -g gitwho-ai
+```
 
 ## Usage
 
-```bash
-npx gitwho-ai pull gitwho:strategy/vision-architect@0.1.0
-```
-
-Writes files to:
-
-```text
-./.gitwho/personalities/<handle>/<name>/<version>/
-```
-
-Optional output root:
+Interactive picker:
 
 ```bash
-npx gitwho-ai pull gitwho:eng/debugger@0.1.0 --out ./tmp
+gitwho-ai
+```
+
+Fast path by SREF:
+
+```bash
+gitwho-ai gitwho:strategy/vision-architect@0.1.0
+```
+
+## Optional flags
+
+```bash
+gitwho-ai gitwho:eng/debugger@0.1.0 --out ./tmp
 ```
 
 Resolve helper:
 
 ```bash
-npx gitwho-ai resolve gitwho:eng/debugger@0.1.0
+gitwho-ai resolve gitwho:eng/debugger@0.1.0
+```
+
+Compatibility alias:
+
+```bash
+gitwho-ai pull gitwho:eng/debugger@0.1.0
 ```
 
 ## Environment overrides

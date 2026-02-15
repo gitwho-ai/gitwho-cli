@@ -10,6 +10,15 @@ export function getRegistryConfig() {
   };
 }
 
+function trimTrailingSlash(value) {
+  return value.replace(/\/+$/, '');
+}
+
+export function getRegistryIndexUrl() {
+  const { rawBase } = getRegistryConfig();
+  return `${trimTrailingSlash(rawBase)}/index.json`;
+}
+
 export function buildRegistryPaths(parsed, outRoot = '.gitwho') {
   const { rawBase, webBase } = getRegistryConfig();
   const personalityPath = `personalities/${parsed.handle}/${parsed.name}`;
@@ -48,6 +57,10 @@ export async function fetchText(url) {
     throw new Error(`Failed to fetch ${url} (${response.status} ${response.statusText})`);
   }
   return response.text();
+}
+
+export async function fetchRegistryIndex() {
+  return fetchJson(getRegistryIndexUrl());
 }
 
 export function validateManifestForSref(manifest, parsed) {

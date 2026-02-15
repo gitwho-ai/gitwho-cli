@@ -1,6 +1,6 @@
 {
   "name": "gitwho-ai",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Pull portable agent personalities by SREF",
   "type": "module",
   "bin": {
