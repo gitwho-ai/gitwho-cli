@@ -5,7 +5,7 @@
 ## Usage
 
 ```bash
-npx gitwho pull gitwho:strategy/vision-architect@0.1.0
+npx gitwho-cli pull gitwho:strategy/vision-architect@0.1.0
 ```
 
 Writes files to:
