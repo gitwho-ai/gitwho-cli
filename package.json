@@ -1,11 +1,11 @@
 {
-  "name": "gitwho-cli",
+  "name": "gitwho-ai",
   "version": "0.1.0",
   "description": "Pull portable agent personalities by SREF",
   "type": "module",
   "bin": {
     "gitwho": "index.js",
-    "gitwho-cli": "index.js"
+    "gitwho-ai": "index.js"
   },
   "files": [
     "index.js",
