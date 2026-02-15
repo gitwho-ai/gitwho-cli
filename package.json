@@ -1,0 +1,19 @@
+{
+  "name": "gitwho",
+  "version": "0.1.0",
+  "description": "Pull portable agent personalities by SREF",
+  "type": "module",
+  "bin": {
+    "gitwho": "src/index.js"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
