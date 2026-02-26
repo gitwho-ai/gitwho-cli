@@ -44,3 +44,18 @@ gitwho-ai pull gitwho:eng/debugger@0.1.0
 
 - `GITWHO_REGISTRY_RAW_BASE` (default: `https://raw.githubusercontent.com/gitwho-ai/registry/main`)
 - `GITWHO_REGISTRY_WEB_BASE` (default: `https://github.com/gitwho-ai/registry/tree/main`)
+
+## Maintainer release
+
+Automated release is configured in `/Users/adam/studio/products/gitwho/gitwho-cli/.github/workflows/release.yml`.
+
+1. Bump version in `/Users/adam/studio/products/gitwho/gitwho-cli/package.json` (for example `npm version 0.1.3 --no-git-tag-version`)
+2. Commit and push `main`
+3. Tag and push:
+
+```bash
+git tag v0.1.3
+git push origin v0.1.3
+```
+
+The workflow runs tests, verifies tag/version match, publishes to npm, and creates a GitHub release.
